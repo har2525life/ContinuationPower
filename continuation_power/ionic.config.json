@@ -1,0 +1,7 @@
+{
+  "name": "continuation_power",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

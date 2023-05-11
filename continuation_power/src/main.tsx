@@ -2,22 +2,22 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Firast from "./pages/Firast";
-import Secdond from "./pages/Secdond";
+import TimerSetPage from "./pages/TimerSetPage";
+import ExercisePage from "./components/HIIT/ExercisePage";
+import RestPage from "./components/HIIT/RestPage";
+import PreparationPage from "./components/HIIT/PreparationPage";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Switch>
+      {/* <Switch>
         <Route exact path="/">
           <Firast />
         </Route>
-        <Route exact path="/second">
-          <Secdond />
-        </Route>
-      </Switch>
+      </Switch> */}
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
